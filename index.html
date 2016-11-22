@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Julius+Sans+One|Abhaya+Libre|Lucida Sans Unicode" rel="stylesheet">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Feelz Filmz Creationz</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="">
+
+<header>
+<h1> Feelz Filmz
+<p>
+<span class = "bold"> Creationz </span>
+</h1>
+
+</head>
+</header>
+<body>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+        <h4> OUR MOVEMENT</h4>
+        <hr width="50%" size="8" align="center">
+        <section>
+</section>
+<section>
+<div class="row">
+
+<div class="one-third column" onmouseover="Play()" onmouseout="Pause()">
+    <video loop = "loop" id= "video" width="320" height="240" preload="metadata">
+      <source src="yoga.mp4" type="video/mp4">
+      </video>
+</div>
+
+<div class="one-third column" onmouseover="Play()" onmouseout="Pause()"> 
+    <video loop = "loop" id= "video1" width="320" height="240" preload="metadata">
+      <source src="test2.mp4" type="video/mp4">
+</video>
+</div>
+<div class="one-third column" onmouseover="Play()" onmouseout="Pause()"> 
+    <video loop = "loop" id= "video1" width="320" height="240" preload="metadata">
+      <source src="test2.mp4" type="video/mp4">
+</video>
+</div>
+<div class = "row">
+<div class="one-third column" onmouseover="Play()" onmouseout="Pause()"> 
+    <video loop = "loop" id= "video" width="320" height="240" preload="metadata">
+      <source src="TEST.mp4" type="video/mp4">
+      </video>
+</div>
+</div>
+</div>
+
+</section>
+
+<script>
+  function SwapMP4forWEBM(content){
+  if(jQuery.browser.chrome || jQuery.browser.mozilla){
+    content.find("video").each(function(){
+      $(this).find("source").attr("src", $(this).find("source").attr("src").replace(".mp4", ".webm"))
+      $(this).find("source").attr("type", $(this).find("source").attr("type").replace("mp4", "webm"))
+    })
+  }
+  return content.html()
+}
+</script>
+
+<script type="text/javascript"> 
+var vid = document.getElementsByTagName("video");
+[].forEach.call(vid, function (item) {
+    item.addEventListener('mouseover', hoverVideo, false);
+    item.addEventListener('mouseout', hideVideo, false);
+});
+
+function hoverVideo(e)
+{   
+    this.play();
+}
+function hideVideo(e)
+{
+    this.pause();
+}  
+    
+</script> 
+
+<section>
+<div class = "container">
+<hr width="50%" size="8" align="center">
+<div class = "row">
+<div class = "twelve columns"><h2>
+<div class = "test">
+We create a virtual <b>experience</b> for human people to get a
+  better <b>feel for</b> what you are all about. We give your clients a short, comprehensive, visualing stunning video
+  that plays right as you go to your site. No lengthy testimonials, instructual manuels,
+  or bs that loses peoples attention. Just the vibes of what makes you unique to get people wanting more.
+  </section>
+  </center>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
